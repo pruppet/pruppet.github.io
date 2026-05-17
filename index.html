@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Simple Site</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f4f4;
+      color: #222;
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 700px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4f46e5, #7c3aed);
+      color: white;
+      padding: 40px 30px;
+      border-radius: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 10px;
+      opacity: 0.9;
+    }
+
+    .list-section {
+      background: white;
+      border-radius: 20px;
+      padding: 25px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .list-section h2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    .pretty-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .pretty-list li {
+      background: #f8f8ff;
+      padding: 16px 18px;
+      border-radius: 12px;
+      margin-bottom: 12px;
+      transition: transform 0.2s ease, background 0.2s ease;
+      border-left: 5px solid #7c3aed;
+    }
+
+    .pretty-list li:hover {
+      transform: translateX(5px);
+      background: #efecff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <header>
+      <h1>My Website</h1>
+      <p>A clean and simple HTML landing page.</p>
+    </header>
+
+    <section class="list-section">
+      <h2>Cool Things</h2>
+
+      <ul class="pretty-list">
+        <li>🌟 First list item</li>
+        <li>📚 Another interesting item</li>
+        <li>🎵 Something creative</li>
+        <li>🚀 One more thing</li>
+      </ul>
+    </section>
+
+  </div>
+
+</body>
+</html>
